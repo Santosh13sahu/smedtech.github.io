@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fcff;
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+}
+:root {
+  --skyblue: #87ceeb;
+  --white: #ffffff;
+  --gold: #f2c94c;
+  --primary-gradient: linear-gradient(to right, #6ea5f1, #11445c);
+  --accent-gradient: linear-gradient(to right, #f2994a, #f2c94c);
+  --bg-gradient: linear-gradient(to right, #11445c, #6ea5f1);
+  --dark: #0c4a74;
+  --primary: #2a6cf4;
+  --light: #f0f8ff;
+  --text: #444;
+  --gradient: linear-gradient(to right, #2a6cf4, #4f93f7);
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  background: var(--accent-gradient);
+  color: white;
+  height: 350px;
+}
+.hero-content p{
+  color: var(--dark);
+  font-size: 1.2em;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px;
+}
+
+.hero-image img {
+  width: 150px;
+  height: 100px;
+
+}
+
+.features {
+  margin: 20px 0;
+}
+
+.enroll-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ffcc00;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.curriculum {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--dark);
+}
+
+.accordion-container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-btn {
+  width: 100%;
+  text-align: left;
+  padding: 15px 20px;
+  background: var(--bg-gradient);
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.accordion-btn:hover {
+  background: var(--primary-gradient);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: var(--light);
+  transition: max-height 0.4s ease;
+}
+
+.accordion-content ul {
+  margin: 0;
+  padding: 15px 30px;
+  list-style: disc;
+}
+
+.accordion-content li {
+  margin-bottom: 10px;
+}
+.go-back-btn {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 16px;
+  background: #2a5298;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.go-back-btn:hover {
+  background: #1e3c72;
+}
+
+

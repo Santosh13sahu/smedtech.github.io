@@ -1,0 +1,141 @@
+/* src/pages/Index.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+.index-container {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.main-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: gold;
+}
+
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.industry-box {
+  background: #1a1a1a;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 6px solid yellow;
+  font-size: 18px;
+  text-align: left;
+}
+
+.industry-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.bg1 { background: linear-gradient(to right, #4facfe, #045d62); }
+.bg2 { background: linear-gradient(to right, #43e97b, #03342b); }
+.bg3 { background: linear-gradient(to right, #fa709a, #690369); }
+.bg4 { background: linear-gradient(to right, #88b5e9, #0e6a6d); }
+.bg5 { background: linear-gradient(to right, #f7971e, #ffd200); }
+.bg6 { background: linear-gradient(to right, #667eea, #764ba2); }
+.bg7 {
+  background: linear-gradient(135deg, #053c37, #00796b); /* Financial */
+}
+.bg8 {
+  background: linear-gradient(135deg, #7e57c2, #3b0a9e); /* Service Based */
+}
+.bg9 {
+  background: linear-gradient(135deg, #90a4ae, #36464d); /* Other Industries */
+}
+
+.company-section {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.company-section h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.company-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.company-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  color: #2c3e50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.company-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Floating Buttons */
+.floating-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-inquiry,
+.btn-whatsapp {
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.btn-inquiry {
+  background: orange;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+}

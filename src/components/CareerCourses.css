@@ -1,0 +1,108 @@
+/* src/components/CareerCourses.css */
+.career-courses {
+  padding: 60px 20px;
+  /* background: #f5f7fa; */
+  text-align: center;
+}
+
+.career-courses .heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #1c2b36;
+}
+
+.course-columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.course-column {
+  flex: 1 1 400px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.course-column h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #0d47a1;
+}
+
+.course-column p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.course-list .tooltip-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.course-btn {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  background: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.course-btn:hover {
+  background: #0056b3;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  position: absolute;
+   /* top: 50%; */
+   /* left: 105%; */
+  transform: translateY(-50%);
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subject-list {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #222;
+}
+
+.subject-list li {
+  list-style: disc;
+  margin: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-columns {
+    flex-direction: column;
+  }
+
+  .tooltip-text {
+    left: auto;
+    right: 0;
+    top: 110%;
+    transform: translateX(-50%);
+  }
+}

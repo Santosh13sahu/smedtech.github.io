@@ -1,0 +1,5 @@
+.nav-links li a.active {
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid gold;
+}
